@@ -36,6 +36,7 @@
 *.app
 easy_find
 span
+mutated
 
 ### Linux ###
 *~
