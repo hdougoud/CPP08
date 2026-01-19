@@ -6,7 +6,7 @@
 /*   By: votre_login <votre_login@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 15:19:59 by votre_login       #+#    #+#             */
-/*   Updated: 2026/01/19 11:55:02 by votre_login      ###   ########.fr       */
+/*   Updated: 2026/01/19 11:59:30 by votre_login      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,6 @@ int	Span::longestSpan(void) const
 	int min;
 
 	if (this->_container.size() <= 1)
-		throw std::exception(); //TODO: Throw custom exception
 		throw std::runtime_error("Not enough numbers");
 	min = *std::min_element(this->_container.begin(), this->_container.end());
 	max = *std::max_element(this->_container.begin(), this->_container.end());
