@@ -6,7 +6,7 @@
 /*   By: votre_login <votre_login@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 08:24:17 by votre_login       #+#    #+#             */
-/*   Updated: 2026/01/14 21:14:19 by votre_login      ###   ########.fr       */
+/*   Updated: 2026/01/19 11:55:02 by votre_login      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@ class Span
 		~Span();
 
 		void	addNumber(int n);
+		void	addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end);
 		int		shortestSpan(void) const;
 		int		longestSpan(void) const;
+		int		getContainerSize(void) const;
 	private:
 		std::vector<int>	_container;
 };
