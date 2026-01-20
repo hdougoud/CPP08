@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: votre_login <votre_login@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 08:18:50 by votre_login       #+#    #+#             */
-/*   Updated: 2026/01/19 11:50:39 by votre_login      ###   ########.fr       */
+/*   Updated: 2026/01/20 09:17:18 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ void	too_much_numbers_test(void)
 	try {
 		Span sp(5);
 		
+		std::cout << sp.getContainerCapacity() << std::endl;
 		sp.addNumber(1);
 		sp.addNumber(2);
 		sp.addNumber(3);

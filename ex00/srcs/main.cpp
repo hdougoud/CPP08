@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: votre_login <votre_login@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 14:31:31 by votre_login       #+#    #+#             */
-/*   Updated: 2026/01/12 21:52:06 by votre_login      ###   ########.fr       */
+/*   Updated: 2026/01/20 09:07:40 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void find_container(T container, int n)
 	try {
 		easyfind(container, n);
 	}
-	catch (std::exception &e) {
+	catch (std::runtime_error &e) {
 		std::cout << C_RED << "No match found exception" << RESET << std::endl;
 	}
 }

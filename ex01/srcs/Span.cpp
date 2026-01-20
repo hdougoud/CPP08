@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: votre_login <votre_login@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 15:19:59 by votre_login       #+#    #+#             */
-/*   Updated: 2026/01/19 11:59:30 by votre_login      ###   ########.fr       */
+/*   Updated: 2026/01/20 09:17:03 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,7 @@ Span::Span(unsigned int size)
 
 Span::Span(const Span &src)
 {
-	if (this->_container.capacity() < src._container.capacity())
-		throw std::runtime_error("Container too small");
+	this->_container.reserve(src._container.capacity());
 	this->_container = src._container;
 	return ;
 }
@@ -102,5 +101,10 @@ int	Span::longestSpan(void) const
 int Span::getContainerSize(void) const
 {
 	return (this->_container.size());
+}
+
+int Span::getContainerCapacity(void) const
+{
+	return (this->_container.capacity());
 }
 

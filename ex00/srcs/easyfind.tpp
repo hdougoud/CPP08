@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   easyfind.tpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: votre_login <votre_login@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 15:12:14 by votre_login       #+#    #+#             */
-/*   Updated: 2026/01/12 21:50:24 by votre_login      ###   ########.fr       */
+/*   Updated: 2026/01/20 09:07:17 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void easyfind(T container, int n)
 
 	it = std::find(container.begin(), container.end(), n);
 	if (it == container.end())
-		throw std::exception();
+		throw std::runtime_error("Occurrence not found");
 	std::cout << C_GREEN << "occurrence " << *it << " found" << RESET << std::endl;
 }
 

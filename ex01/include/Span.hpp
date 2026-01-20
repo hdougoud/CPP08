@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: votre_login <votre_login@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 08:24:17 by votre_login       #+#    #+#             */
-/*   Updated: 2026/01/19 11:55:02 by votre_login      ###   ########.fr       */
+/*   Updated: 2026/01/20 09:16:15 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ class Span
 		int		shortestSpan(void) const;
 		int		longestSpan(void) const;
 		int		getContainerSize(void) const;
+		int		getContainerCapacity(void) const;
 	private:
 		std::vector<int>	_container;
 };
