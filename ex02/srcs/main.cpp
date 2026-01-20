@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: votre_login <votre_login@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 00:35:15 by votre_login       #+#    #+#             */
-/*   Updated: 2026/01/19 17:06:51 by votre_login      ###   ########.fr       */
+/*   Updated: 2026/01/20 14:52:16 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ void	subject_main(void)
 
 	MutantStack<int>::iterator it = mstack.begin();
 	MutantStack<int>::iterator ite = mstack.end();
+	MutantStack<int>::const_iterator c_it = mstack.begin();
+	MutantStack<int>::const_iterator c_ite = mstack.end();
 	++it;
 	--it;
 	while (it != ite)
@@ -78,6 +80,8 @@ void	list_compare_test(void)
 
 	std::list<int>::iterator it = list.begin();
 	std::list<int>::iterator ite = list.end();
+	std::list<int>::const_iterator c_it = list.begin();
+	std::list<int>::const_iterator c_ite = list.end();
 	++it;
 	--it;
 	while (it != ite)
